@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        PATH = "$PATH:/opt/apache-tomcat-8.0.52/bin"
+        PATH = "$PATH:/opt/apache-maven-3.9.6/bin"
     }
     stages{
        stage('Checkout'){
