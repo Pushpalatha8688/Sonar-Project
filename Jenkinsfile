@@ -6,7 +6,7 @@ pipeline{
     stages{
        stage('Checkout'){
             steps{
-                git 'git@github.com:NagiReddyDEVOPS/Sonar-Project.git'
+                git 'git@github.com:Pushpalatha8688/Sonar-Project.git'
             }
          }        
        stage('Package'){
