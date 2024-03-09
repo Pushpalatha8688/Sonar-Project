@@ -20,7 +20,7 @@ pipeline{
         withSonarQubeEnv('Sonarqube') { 
         // If you have configured more than one global server connection, you can specify its name
 //      sh "${scannerHome}/bin/sonar-scanner"
-        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=sonar -Dsonar.host.url=http://13.232.164.77:9000 -Dsonar.login=sqp_156b51299a00cf8e411a9b64a482c12b6570b025"
+        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=sonar -Dsonar.host.url=http://13.235.242.211:9000 -Dsonar.login=sqp_aa626340e8d5f2b3576a4533d217136da28f7eb7"
     }
         }
         }
@@ -34,7 +34,7 @@ pipeline{
       groupId: 'myGroupId',
       version: '1.0-SNAPSHOT',
       repository: 'maven-snapshots',
-      credentialsId: 'nexuscredentials',
+      credentialsId: 'nexus-credentials',
       artifacts: [
       [artifactId: 'maven-project',
       classifier: '',
